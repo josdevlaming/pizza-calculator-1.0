@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <title> "Pizza's met kaas en tomaat" </title>
+</head>
+ <body>
+   <script>
+    const TOESTEMMING = "Hallo mogen wij u besteling opnemen.";
+    alert (TOESTEMMING);
+
+    var naam = prompt ("Wat is u volledigenaam?");
+    var woonplaats = prompt ("Wat is u woonplaats?");
+    var postcode = prompt ("Wat is u postcode?");
+
+    document.write ("U besteling en gegevens: ");
+    document.write ("<br>");
+    document.write ("volledigenaam: ", naam);
+    document.write ("<br>");
+    document.write ("Woonplaats: ", woonplaats);
+    document.write ("<br>");
+    document.write ("Postcode: ", postcode);
+    document.write ("<br>");
+
+    var small = prompt ("Hoeveel small pizzas wil je kopen? (€3,99)");
+    var medium = prompt ("Hoeveel medium pizza's wil je kopen? (€5,99)");
+    var large = prompt ("Hoeveel large pizza's wil je kopen? (€8,99)");
+    const SMALL = small    *3.99;
+    const MEDIUM = medium   *5.99;
+    const LARGE = large    *8.99;
+    var d = small * 3.99 + medium * 5.99 + large * 8.99;
+    d = Number(d).toFixed(2);
+
+    if (small > 0) { document.write ("Te betalen voor Small pizza's : €" + SMALL + "<br>");
+
+  }
+
+   if (medium > 0) { document.write ("Te betalen voor Medium pizza's : €" + MEDIUM + "<br>");
+
+ }
+
+   if (large > 0) { document.write ("Te betalen voor Large pizza's : €" + LARGE + "<br>");
+
+ }
+   document.write ("<br>" + "Totaal = €" + d + "<br>");
+    </script>
+    </body>
+    </html>
